@@ -76,7 +76,8 @@ const persistentCartGetFlow = ai.defineFlow(
     name: 'persistentCartGetFlow',
     inputSchema: PersistentCartInputSchema,
     outputSchema: PersistentCartOutputSchema,
-  },\n  async input => {
+  },
+  async input => {
     try {
       const db = firestore();
       const cartRef = db.collection('carts').doc(input.userId);
@@ -105,4 +106,3 @@ const persistentCartGetFlow = ai.defineFlow(
     }
   }
 );
-
