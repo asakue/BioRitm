@@ -12,7 +12,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-import {firestore} from 'firebase-admin';
+import { getCartTool, saveCartTool } from '../tools/firestore-tools';
 
 const PersistentCartInputSchema = z.object({
   userId: z.string().describe('The unique identifier for the user.'),
@@ -50,13 +50,11 @@ const persistentCartSaveFlow = ai.defineFlow(
     name: 'persistentCartSaveFlow',
     inputSchema: PersistentCartInputSchema,
     outputSchema: PersistentCartOutputSchema,
+    tools: [saveCartTool]
   },
-  async input => {
+  async (input) => {
     try {
-      const db = firestore();
-      const cartRef = db.collection('carts').doc(input.userId);
-      await cartRef.set(input.cartData);
-
+      await saveCartTool(input);
       return {
         success: true,
         message: 'Cart data saved successfully.',
@@ -76,15 +74,12 @@ const persistentCartGetFlow = ai.defineFlow(
     name: 'persistentCartGetFlow',
     inputSchema: PersistentCartInputSchema,
     outputSchema: PersistentCartOutputSchema,
+    tools: [getCartTool]
   },
-  async input => {
+  async (input) => {
     try {
-      const db = firestore();
-      const cartRef = db.collection('carts').doc(input.userId);
-      const doc = await cartRef.get();
-
-      if (doc.exists) {
-        const cartData = doc.data();
+      const cartData = await getCartTool(input);
+      if (cartData) {
         return {
           success: true,
           message: 'Cart data retrieved successfully.',

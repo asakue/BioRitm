@@ -1,17 +1,15 @@
 'use server';
 
-import {
-  getCartData,
-  saveCartData,
-} from '@/ai/flows/persistent-cart-data';
 import { recommendOfferings } from '@/ai/flows/intelligent-offerings-tool';
 import type { CartItem } from './types';
+import { getCart as getCartFromDb, saveCart as saveCartToDb } from '@/ai/tools/firestore-tools';
+
 
 export async function getCart(userId: string) {
   try {
-    const result = await getCartData({ userId, cartData: null });
-    if (result.success && result.cartData?.items) {
-      return result.cartData.items as CartItem[];
+    const cartData = await getCartFromDb({ userId, cartData: null });
+    if (cartData?.items) {
+      return cartData.items as CartItem[];
     }
     return [];
   } catch (error) {
@@ -22,7 +20,7 @@ export async function getCart(userId: string) {
 
 export async function saveCart(userId: string, cartItems: CartItem[]) {
   try {
-    await saveCartData({ userId, cartData: { items: cartItems } });
+    await saveCartToDb({ userId, cartData: { items: cartItems } });
   } catch (error) {
     console.error('Failed to save cart data:', error);
   }

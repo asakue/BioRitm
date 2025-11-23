@@ -19,9 +19,9 @@ export function ServiceCard({ product }: { product: Product }) {
   const placeholder = findImage(product.image);
 
   return (
-    <Card className="flex flex-col overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+    <Card className="flex flex-col overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
       <CardHeader className="p-0">
-        <div className="relative w-full h-48">
+        <div className="relative w-full h-52">
           {placeholder && (
             <Image
               src={placeholder.imageUrl}
@@ -39,8 +39,8 @@ export function ServiceCard({ product }: { product: Product }) {
         <CardDescription>{product.description}</CardDescription>
       </CardContent>
       <CardFooter className="p-6 pt-0 flex justify-between items-center">
-        <p className="text-xl font-bold font-headline text-primary">${product.price.toFixed(2)}</p>
-        <Button onClick={() => addToCart(product)}>Add to Cart</Button>
+        <p className="text-2xl font-bold font-headline text-primary">{product.price.toFixed(0)} ₽</p>
+        <Button onClick={() => addToCart(product)}>В корзину</Button>
       </CardFooter>
     </Card>
   );

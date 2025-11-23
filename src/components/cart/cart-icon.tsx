@@ -24,7 +24,7 @@ export function CartIcon() {
       <SheetTrigger asChild>
         <Button variant="outline" size="icon" className="relative">
           <ShoppingCart className="h-5 w-5" />
-          <span className="sr-only">Open cart</span>
+          <span className="sr-only">Открыть корзину</span>
           {isLoading ? (
             <Skeleton className="absolute -right-1 -top-1 h-4 w-4 rounded-full" />
           ) : (
@@ -41,7 +41,7 @@ export function CartIcon() {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <SheetHeader>
-          <SheetTitle className="font-headline">Your Cart</SheetTitle>
+          <SheetTitle className="font-headline">Ваша корзина</SheetTitle>
         </SheetHeader>
         <CartSheetContent />
       </SheetContent>

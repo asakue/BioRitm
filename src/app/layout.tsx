@@ -3,12 +3,11 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import { Providers } from './providers';
 import { Header } from '@/components/layout/header';
-import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'BioRitm Marketplace',
-  description: 'Modern solutions for a healthy lifestyle.',
+  title: 'БиоРитм | Маркетплейс',
+  description: 'Современные решения для здорового образа жизни.',
 };
 
 export default function RootLayout({
@@ -17,8 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="ru" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -28,7 +28,6 @@ export default function RootLayout({
         <Providers>
           <Header />
           <div className="flex-grow">{children}</div>
-          <Footer />
         </Providers>
         <Toaster />
       </body>

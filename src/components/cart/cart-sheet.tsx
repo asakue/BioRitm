@@ -46,7 +46,7 @@ export function CartSheetContent() {
         </ScrollArea>
       ) : (
         <div className="flex flex-1 items-center justify-center">
-          <p className="text-muted-foreground">Your cart is empty.</p>
+          <p className="text-muted-foreground">Ваша корзина пуста.</p>
         </div>
       )}
 
@@ -55,17 +55,17 @@ export function CartSheetContent() {
           <Separator />
           <div className="p-4 space-y-2">
             <div className="flex justify-between text-sm font-medium">
-              <span>Subtotal</span>
-              <span>${subtotal.toFixed(2)}</span>
+              <span>Итого</span>
+              <span>{subtotal.toFixed(2)} ₽</span>
             </div>
             <p className="text-xs text-muted-foreground">
-              Shipping and taxes calculated at checkout.
+              Доставка и налоги будут рассчитаны при оформлении заказа.
             </p>
           </div>
           <RecommendedOfferings items={cartItems} />
           <SheetFooter className="p-4 border-t">
             <Button className="w-full" size="lg">
-              Proceed to Checkout
+              Перейти к оформлению
             </Button>
           </SheetFooter>
         </>
