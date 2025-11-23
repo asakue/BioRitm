@@ -1,0 +1,70 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A serene yoga pose in a bright, airy studio",
+      "imageUrl": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx5b2dhJTIwc3R1ZGlvfGVufDB8fHx8MTc2Mzg4ODg0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "yoga studio"
+    },
+    {
+      "id": "fitness_training",
+      "description": "A person lifting weights with a trainer",
+      "imageUrl": "https://images.unsplash.com/photo-1763219803356-35c685767c44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmaXRuZXNzJTIwdHJhaW5pbmd8ZW58MHx8fHwxNzYzODIzNzY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fitness training"
+    },
+    {
+      "id": "nutrition_coaching",
+      "description": "A colorful array of healthy fruits and vegetables",
+      "imageUrl": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoZWFsdGh5JTIwZm9vZHxlbnwwfHx8fDE3NjM4MDYzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "healthy food"
+    },
+    {
+      "id": "yoga_course",
+      "description": "A group of people in a yoga class",
+      "imageUrl": "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx5b2dhJTIwY2xhc3N8ZW58MHx8fHwxNzYzODA2NDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "yoga class"
+    },
+    {
+      "id": "hiit_class",
+      "description": "People doing high-intensity exercises in a gym",
+      "imageUrl": "https://images.unsplash.com/photo-1606889464198-fcb18894cf50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxneW0lMjB3b3Jrb3V0fGVufDB8fHx8MTc2MzgwODA3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gym workout"
+    },
+    {
+      "id": "wellness_retreat",
+      "description": "A beautiful, tranquil nature scene with a lake",
+      "imageUrl": "https://images.unsplash.com/photo-1762957044544-c5c70dd9ae77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjByZXRyZWF0fGVufDB8fHx8MTc2Mzg4ODg0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nature retreat"
+    },
+    {
+      "id": "mindset_program",
+      "description": "A person meditating peacefully at sunrise",
+      "imageUrl": "https://images.unsplash.com/photo-1708498589041-590096786e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtZWRpdGF0aW9uJTIwc3VucmlzZXxlbnwwfHx8fDE3NjM3ODkyNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "meditation sunrise"
+    },
+    {
+      "id": "testimonial1",
+      "description": "A smiling person giving a testimonial",
+      "imageUrl": "https://images.unsplash.com/photo-1579047917338-a6a69144fe63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYXBweSUyMHBlcnNvbnxlbnwwfHx8fDE3NjM3ODk0ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy person"
+    },
+    {
+      "id": "testimonial2",
+      "description": "Another smiling person giving a testimonial",
+      "imageUrl": "https://images.unsplash.com/photo-1753161023962-665967602405?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzYXRpc2ZpZWQlMjBjdXN0b21lcnxlbnwwfHx8fDE3NjM4MzY2ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "satisfied customer"
+    },
+    {
+      "id": "testimonial3",
+      "description": "A third smiling person giving a testimonial",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWlsaW5nJTIwZmFjZXxlbnwwfHx8fDE3NjM4Mzc4MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling face"
+    },
+    {
+      "id": "about_us",
+      "description": "A team of wellness professionals",
+      "imageUrl": "https://images.unsplash.com/photo-1713965240335-7222eb883e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWxsbmVzcyUyMHRlYW18ZW58MHx8fHwxNzYzODg4ODM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wellness team"
+    }
+  ]
+}
